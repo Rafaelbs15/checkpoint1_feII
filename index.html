@@ -14,21 +14,19 @@
             <form action="#" method="POST">
                 <fieldset>
                     <legend>Informações sobre o filme:</legend>
-                    <label for="email">Título: </label>
-                    <input type="email" name="email" id="email" placeholder="Insira o título do filme" required>
-                    <label for="nome">Digite o ano de estreia: </label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="telefone">Digite o gênero: </label>
-                    <input type="tel" name="telefone" id="telefone">
-                    <label for="endereco">Digite uma descrição: </label>
-                    <textarea name="endereco" id="endereco" cols="22" rows="5"></textarea>
+                    <label for="titulo">Título: </label>
+                    <input type="titulo" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
+                    <label for="ano">Digite o ano de estreia: </label>
+                    <input type="ano" name="ano" id="ano" placeholder="Insira o ano" required>
+                    <label for="genero">Digite o gênero: </label>
+                    <input type="genero" name="genero" id="genero" placeholder="Insira o gênero" required>
+                    <label for="descricao">Digite uma descrição: </label>
+                    <textarea name="descricao" id="descricao" cols="22" rows="5" placeholder="Descreva o filme brevemente" required></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Compartilhe uma foto do filme:</legend>
-                    <select name="doces" id="doces" placeholder="Insira o título do filme" required>
-                        <input value="">Link URL</input>
-                        <lebal
-                
+                    <label for="endereco">Cole o link da imagem: </label>
+                    <input name="endereco" id="endereco" placeholder="Link URL" required>
                     </select>
                 </fieldset>
                 <button type="reset">Cancelar</button>
