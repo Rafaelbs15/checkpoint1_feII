@@ -17,16 +17,17 @@
                     <label for="titulo">Título: </label>
                     <input type="titulo" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
                     <label for="ano">Digite o ano de estreia: </label>
-                    <input type="ano" name="ano" id="ano" placeholder="Insira o ano" required>
+                    <input type="ano" name="ano" id="ano" onkeyup="recebeAno()" placeholder="Insira o ano" required>
                     <label for="genero">Digite o gênero: </label>
                     <input type="genero" name="genero" id="genero" placeholder="Insira o gênero" required>
                     <label for="descricao">Digite uma descrição: </label>
                     <textarea name="descricao" id="descricao" cols="22" rows="5" placeholder="Descreva o filme brevemente" required></textarea>
+                    <label for="link">Cole o link de uma imagem: </label>
+                    <input name="link" id="link" placeholder="Link URL" required>
                 </fieldset>
                 <fieldset>
-                    <legend>Compartilhe uma foto do filme:</legend>
-                    <label for="link">Cole o link da imagem: </label>
-                    <input name="link" id="link" placeholder="Link URL" required>
+                    <legend>Valores digitados pelo usuário::</legend>
+                    <label id= "recebeTitulo" for="recebeTitulo">Titulo: </label>
                     </select>
                 </fieldset>
                 <button id="send" type="submit">Enviar</button>

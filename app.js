@@ -10,6 +10,14 @@ btn.addEventListener("click", function(e) {
     console.log(value);
 });
 
+// recebe o valor e imprime no HTML
+function recebeAno(){
+    var titutloFilme = document.getElementById("#titulo").value;
+    console.log(titutloFilme);
+    document.getElementById("recebeTitulo").innerHTML = tituloFilme;
+    
+}
+
 btn.addEventListener("click", function(e) {
     e.preventDefault();
 
@@ -49,3 +57,11 @@ btn.addEventListener("click", function(e) {
 
     console.log(value);
 });
+
+function recebeAno(){
+    var titutloFilme = document.getElementById("#titulo").value;
+    console.log(titutloFilme);
+    document.getElementById("recebeTitulo").value = tituloFilme;
+    
+}
+
