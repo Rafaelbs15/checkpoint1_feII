@@ -1,31 +1,51 @@
+const btn = document.querySelector("#send");
 
-// 1. Seleção do formulário
-var formulario = document.getElementById('formularioDeCadastro');
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
 
-// 2. Selação do campo
-var campoTelefone = document.getElementById('telefone');
+    const titulo = document.querySelector("#titulo");
 
-// 3. Captura o evento de envio do formulário e disparar a rotina
+    const value = titulo.value;
 
-formulario.addEventListener('submit', function() {
-    
-    var valorDoCampoTelefoneSemTratamento = campoTelefone.value;
+    console.log(value);
+});
 
-    // \s = espaços
-    // \D = para números
-    var valorDoCampoTelefoneSemEspacos = valorDoCampoTelefoneSemTratamento
-    .replace(/\s/g, '');
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
 
-    var valorDoCampoTelefoneSemCaracteres = valorDoCampoTelefoneSemEspacos
-    .replace(/\D/g, '');
+    const ano = document.querySelector("#ano");
 
-    var textoMinusculo = valorDoCampoTelefoneSemTratamento.toLowerCase();
-    var textoMaiusculo = valorDoCampoTelefoneSemTratamento.toUpperCase();
+    const value = ano.value;
 
-    // 3.1. Capturando os dados do formulário
-    // alert(`Valor sem tratamento: ${valorDoCampoTelefoneSemTratamento}`);
-    alert(`Valor tratamento: ${valorDoCampoTelefoneSemTratamento}`);
+    console.log(value);
+});
 
-    alert(`Valor tratado ${valorDoCampoTelefoneSemCaracteres}`);
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
 
+    const genero = document.querySelector("#genero");
+
+    const value = genero.value;
+
+    console.log(value);
+});
+
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const descricao = document.querySelector("#descricao");
+
+    const value = descricao.value;
+
+    console.log(value);
+});
+
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const link = document.querySelector("#link");
+
+    const value = link.value;
+
+    console.log(value);
 });
