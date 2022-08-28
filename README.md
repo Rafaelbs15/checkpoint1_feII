@@ -3,6 +3,6 @@ DH
 
 Grupo 6: 
 
-Rafael Barbosa Simões
-Luiz Felipe 
+Rafael Barbosa Simões <br>
+Luiz Felipe <br>
 Tomás Ott
