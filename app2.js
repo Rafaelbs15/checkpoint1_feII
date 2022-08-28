@@ -30,7 +30,7 @@ btnAdd.addEventListener("click", event => {
         document.querySelector("#descricaoDigitado").innerHTML = criacardDescricao
         let criarcardImg = document.getElementById("img").value;
         document.querySelector("#imgDigitado").innerHTML = `
-            <img src= '${linkImagem.value}' >
+            <img src= ${linkImagem.value} >
             `
      }
      cards()
