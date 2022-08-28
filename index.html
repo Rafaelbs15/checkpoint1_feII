@@ -18,7 +18,7 @@
                     <label for="titulo">Título: </label>
                     <input type="titulo" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
                     <label for="ano">Digite o ano de estreia: </label>
-                    <input type="ano" name="ano" id="ano" onkeyup="recebeAno()" placeholder="Insira o ano" required>
+                    <input type="ano" name="ano" id="ano" placeholder="Insira o ano" required>
                     <label for="genero">Digite o gênero: </label>
                     <input type="genero" name="genero" id="genero" placeholder="Insira o gênero" required>
                     <label for="descricao">Digite uma descrição: </label>
@@ -28,13 +28,13 @@
                 </fieldset>
                 <fieldset class="valoresDigitados">
                     <legend>Valores digitados pelo usuário::</legend>
-                    <label class="titulo">Titulo: </label>
-                    <label class="ano">Ano: </label>                    
-                    <label class="genero">Genero: </label>
-                    <label class="descricao">Descrição: </label>
-                    <label class="link">Link: </label>
+                    <p id="tituloDigitado"></p>
+                    <p id="anoDigitado"></p>                    
+                    <p id="generoDigitado"></p>
+                    <p id="descricaoDigitado"></p>
+                    <p id="linkDigitado"></p>
                 </fieldset>
-                <button id="btnSalvar" >Enviar</button>
+                <button id="btnEnviar" >Enviar</button>
                 <button id="resetar" type="reset">Apagar</button>
             </form>
         </section>
