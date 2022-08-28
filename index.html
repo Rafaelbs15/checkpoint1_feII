@@ -13,29 +13,31 @@
             <h2>Qual o seu vídeo favorito?</h2>
         <section>
             <form id="formFilme" action="#" method="POST">
-                <fieldset>
+                <fieldset id="forms">
                     <legend>Informações sobre o filme:</legend>
                     <label for="titulo">Título: </label>
-                    <input type="titulo" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
+                    <input type="text" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
                     <label for="ano">Digite o ano de estreia: </label>
-                    <input type="ano" name="ano" id="ano" placeholder="Insira o ano" required>
+                    <input type="text" name="ano" id="ano" placeholder="Insira o ano" required>
                     <label for="genero">Digite o gênero: </label>
-                    <input type="genero" name="genero" id="genero" placeholder="Insira o gênero" required>
+                    <input type="text" name="genero" id="genero" placeholder="Insira o gênero" required>
                     <label for="descricao">Digite uma descrição: </label>
                     <textarea name="descricao" id="descricao" cols="22" rows="5" placeholder="Descreva o filme brevemente" required></textarea>
-                    <label for="link">Cole o link de uma imagem: </label>
-                    <input name="link" id="link" placeholder="Link URL" required>
+                    <label for="img" class="form-label">Cole o link de uma imagem: </label>
+                    <input type="url" name="img" id="img" placeholder="Link URL" required>
                 </fieldset>
-                <fieldset class="valoresDigitados">
+                <fieldset id="forms">
                     <legend>Valores digitados pelo usuário::</legend>
+                    <div id="valoresDigitados">
                     <p id="tituloDigitado"></p>
                     <p id="anoDigitado"></p>                    
                     <p id="generoDigitado"></p>
                     <p id="descricaoDigitado"></p>
-                    <p id="linkDigitado"></p>
+                    <p id="imgDigitado"></p>
+                    </div>
                 </fieldset>
-                <button id="btnEnviar" >Enviar</button>
-                <button id="resetar" type="reset">Apagar</button>
+                <button id="btnAdd" type="submit" >Adicionar</button>
+                <button id="resetar" type="reset">Limpar</button>
             </form>
         </section>
     </main>
