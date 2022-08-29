@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 1 Infra 1 DH - GRUPO 6
+    </title>
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
     <script src="./app2.js" defer></script>  
 </head>
 <body>
     <main class="container">
             <h2>Qual o seu vídeo favorito?</h2>
         <section>
-            <form id="formFilme" action="#" method="POST">
-                <fieldset id="forms">
+            <form action="" id="formFilme" action="#" method="POST">
+                <fieldset id="forms1">
                     <legend>Informações sobre o filme:</legend>
                     <label for="titulo">Título: </label>
-                    <input type="text" name="titulo" id="titulo" placeholder="Insira o título do filme" required>
+                    <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Insira o título do filme" required>
                     <label for="ano">Digite o ano de estreia: </label>
-                    <input type="text" name="ano" id="ano" placeholder="Insira o ano" required>
+                    <input type="text" name="ano" id="ano" class="form-control" placeholder="Insira o ano" required>
                     <label for="genero">Digite o gênero: </label>
-                    <input type="text" name="genero" id="genero" placeholder="Insira o gênero" required>
+                    <input type="text" name="genero" id="genero" class="form-control" placeholder="Insira o gênero" required>
                     <label for="descricao">Digite uma descrição: </label>
-                    <textarea name="descricao" id="descricao" cols="22" rows="5" placeholder="Descreva o filme brevemente" required></textarea>
+                    <textarea name="descricao" id="descricao" cols="22" rows="5" class="form-control"  placeholder="Descreva o filme brevemente" required></textarea>
                     <label for="img" class="form-label">Cole o link de uma imagem: </label>
-                    <input type="url" name="img" id="img" placeholder="Link URL" required>
+                    <input type="url" name="img" id="img" class="form-control" placeholder="Link URL" required>
                 </fieldset>
-                <fieldset id="forms">
+                <fieldset id="forms2">
                     <legend>Valores digitados pelo usuário::</legend>
                     <div id="valoresDigitados">
                     <p id="tituloDigitado"></p>
@@ -37,9 +40,17 @@
                     </div>
                 </fieldset>
                 <button id="btnAdd" type="submit" >Adicionar</button>
-                <button id="resetar" type="reset">Limpar</button>
+                <input id="resetar" type="button" onclick="resetaPagina()" value="Limpar">
             </form>
         </section>
     </main>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+-->
 </body>
 </html>

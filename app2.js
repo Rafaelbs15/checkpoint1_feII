@@ -38,3 +38,8 @@ btnAdd.addEventListener("click", event => {
 })
 
 
+//resetar conteúdo impresso 
+function resetaPagina() {
+    document.getElementById("forms2").reset();
+  }
+resetaPagina()
